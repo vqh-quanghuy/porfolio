@@ -4,7 +4,9 @@
         <v-list>
           <v-list-item
             v-for="item in menuItems"
-            :key="item.title">
+            :key="item.title"
+            @click="scrollTo(item.to), sidebar = !sidebar"
+            >
             <v-list-item-action>
               <v-icon>{{ item.icon }}</v-icon>
             </v-list-item-action>
@@ -57,3 +59,8 @@ export default {
   },
 };
 </script>
+<style scoped>
+.v-app-bar.v-app-bar--fixed{
+  z-index: 10001;
+}
+</style>

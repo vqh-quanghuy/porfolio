@@ -5,6 +5,7 @@
       <AboutMe id="about-me" />
       <Education id="education" />
       <Experiences id="experiences" />
+      <Technologies id="technologies" />
     </v-main>
   </v-app>
 </template>
@@ -14,6 +15,7 @@ import Header from './components/Header';
 import AboutMe from './components/AboutMe';
 import Education from './components/Education';
 import Experiences from './components/Experiences.vue';
+import Technologies from './components/Technologies.vue';
 
 export default {
   name: 'App',
@@ -21,7 +23,8 @@ export default {
     Header,
     AboutMe,
     Education,
-    Experiences
+    Experiences,
+    Technologies
   },
 
   data: () => ({
@@ -33,6 +36,19 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 *{
   font-family: 'Roboto', sans-serif;
+}
+::-webkit-scrollbar{
+  width: 0.8em;
+}
+::-webkit-scrollbar-thumb{
+  background: #1CD8D2;
+}
+::-webkit-scrollbar-track{
+  background-color: #93EDC7;
+}
+:root{
+  scrollbar-color: #1CD8D2 #93EDC7 !important;
+  scrollbar-width: thin !important;
 }
 .primary-btn{
   transition: 0.5s;

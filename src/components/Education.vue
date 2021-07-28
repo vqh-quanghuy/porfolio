@@ -15,10 +15,10 @@
             <v-hover>
               <template v-slot:default="{ hover }">
                 <v-card :elevation="hover ? 24 : 1">
-                  <v-card-title class="text-h5 font-weight-bold">
+                  <v-card-title class="text-h6 font-weight-bold timeline-title">
                     {{item.title}}
                   </v-card-title>
-                  <v-card-text class="font-weight-medium">
+                  <v-card-text class="font-weight-medium timeline-text">
                     {{item.text}}
                   </v-card-text>
                 </v-card>
@@ -70,8 +70,11 @@ export default {
   color: #fff;
 }
 @media only screen and (max-width: 600px) {
+  .col-12 {
+    padding: 0px !important;
+  }
   .sub-heading{
-    font-size: 38px;
+    font-size: 32px;
     line-height: 42px;
     color: #fff;
   }
@@ -82,6 +85,12 @@ export default {
   .sub-achievements{
     font-size: 16px;
     color: #fff;
+  }
+  .timeline-title{
+    font-size: 1rem !important;
+  }
+  .timeline-text{
+    font-size: 0.8rem !important;
   }
 }
 </style>
