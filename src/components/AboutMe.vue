@@ -14,7 +14,7 @@
             <h2>Hello, my name is Huy</h2> 
             <h2>A Web Developer</h2>
           </div>
-          <v-btn x-large class="font-weight-bold my-4 primary-btn" @click="downloadCV()"> Get my CV
+          <v-btn data-aos="zoom-in-up" data-aos-duration="1500" x-large class="font-weight-bold my-4 primary-btn" @click="downloadCV()"> Get my CV
             <v-icon
             large
             right
@@ -25,17 +25,29 @@
             </v-icon>
           </v-btn>
           <br>
-          <v-chip class="contact-link" label href="mailto:vqh.quanghuy@gmail.com">Or contact with me?</v-chip>
+          <v-chip 
+            data-aos="fade-left" 
+            data-aos-delay="1500"
+            data-aos-duration="1500" 
+            class="contact-link" 
+            label 
+            href="mailto:vqh.quanghuy@gmail.com">
+            Or contact with me?
+          </v-chip>
         </v-col>
         <v-col md="6" sm="12" cols="12" class="d-flex justify-center">
-          <v-img
-          max-height="400"
-          max-width="300"
-          lazy-src="https://picsum.photos/seed/picsum/300/400"
-          src="https://picsum.photos/seed/picsum/300/400"
-          class="avt-image">
-          </v-img>
-          <div class="avt-square"></div>
+          <div 
+            class="outside-avt"
+            data-aos="fade-up"
+            data-aos-duration="2000">
+            <v-img
+              max-height="400"
+              max-width="300"
+              :src="require('@/assets/porfo-avt.png')"
+              class="avt-image">
+            </v-img>
+            <div class="avt-square"></div>
+          </div>
         </v-col>
       </v-row>
     </v-container>
@@ -103,13 +115,20 @@ export default {
 .contact-link::before{
   background: none;
 }
-.avt-image{
+.outside-avt{
   position: relative;
+  height: 400px;
+  width: 300px;
+  background: #93EDC7;
+}
+.avt-image{
+  position: absolute;
   z-index: 2;
+  bottom: 0;
 }
 .avt-square{
   position: absolute;
-  transform: translate(-70%,200%);
+  transform: translate(-40%,220%);
   overflow: hidden;
   height: 140px;
   width: 140px;

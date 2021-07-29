@@ -1,9 +1,15 @@
 <template>
-  <div class="experiences-section">
+  <div class="technologies-section">
     <v-container class="pa-5">
-      <h3 class="sub-heading font-weight-black text-uppercase text-center">Technologies</h3>
+      <h3 
+      data-aos="zoom-in-down"
+      data-aos-duration="500"
+      class="sub-heading font-weight-black text-uppercase text-center">Technologies</h3>
       <v-row class="my-4" justify="center">
-        <v-col v-for="logo in technologiesData" :key="logo.title" md="2" sm="3" cols="6">
+        <v-col 
+          data-aos="zoom-in-down" 
+          data-aos-duration="500"
+          v-for="logo in technologiesData" :key="logo.title" md="2" sm="3" cols="6">
           <v-card
             class="pa-2 d-flex align-content-center technologies-card tech-img"
             outlined

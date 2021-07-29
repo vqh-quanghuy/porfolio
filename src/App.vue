@@ -6,7 +6,9 @@
       <Education id="education" />
       <Experiences id="experiences" />
       <Technologies id="technologies" />
+      <Projects id="projects" />
     </v-main>
+    <Footer />
   </v-app>
 </template>
 
@@ -16,17 +18,23 @@ import AboutMe from './components/AboutMe';
 import Education from './components/Education';
 import Experiences from './components/Experiences.vue';
 import Technologies from './components/Technologies.vue';
+import Projects from './components/Projects.vue';
+import Footer from './components/Footer.vue';
 
 export default {
   name: 'App',
+  created(){
+    document.title = "Vu Quang Huy's Porfolio"
+  },
   components: {
     Header,
     AboutMe,
     Education,
     Experiences,
-    Technologies
+    Technologies,
+    Projects,
+    Footer
   },
-
   data: () => ({
     appTitle: `Vu Quang Huy's Porfolio`,
   }),

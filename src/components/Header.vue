@@ -63,4 +63,7 @@ export default {
 .v-app-bar.v-app-bar--fixed{
   z-index: 10001;
 }
+.v-navigation-drawer {
+  z-index: 10002;
+}
 </style>
