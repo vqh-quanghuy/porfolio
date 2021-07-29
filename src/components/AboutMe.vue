@@ -58,7 +58,7 @@ import axios from 'axios';
 export default {
   methods: {
     downloadCV(){
-      axios.get('http://localhost:8080/VuQuangHuy_CV_Developer.pdf', {
+      axios.get('/VuQuangHuy_CV_Developer.pdf', {
         responseType: 'blob',
       }).then(response => {
         const url = window.URL.createObjectURL(new Blob([response.data]));
