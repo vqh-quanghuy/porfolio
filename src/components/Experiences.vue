@@ -21,8 +21,8 @@
         </v-col>
         <v-col md="6" sm="12" cols="12">
           <div data-aos="fade-up"
-          data-aos-delay="1500"
-          data-aos-duration="1500">
+          data-aos-delay="500"
+          data-aos-duration="1000">
             <h5 class="font-weight-bold text-center white--text tictactoe-title">Tic Tac Toe Game</h5>
             <p v-if="gameWinner!==''" :class="gameWinner == `You win!`? `teal--text` : (gameWinner == `Machine win!`)?`red--text`:`yellow--text`" class="font-weight-normal text-center text--lighten-2 tictactoe-winner">{{gameWinner}}</p>
             <table class="tictactoe mx-auto font-weight-black white--text my-4">

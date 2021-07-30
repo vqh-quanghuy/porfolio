@@ -50,15 +50,15 @@ export default {
     projects: [
       { 
         title: "Booking Hotel Room Project",
-        desc: "Build a website with hotel booking function...",
+        desc: "My graduate project, as required to clone main functions of Booking.com. I perform a website with main hotel's booking function, admin dashboard and hotel owner check user's booking information,...",
         src: require('@/assets/porfo-projects/booking-project.png'),
         tech: [
           "PHP", "Laravel", "Vanilla JS", "Laravel Blade"
         ]
       },
       { 
-        title: "Real Estate Agency",
-        desc: "Build a website handle agency for real estates...",
+        title: "Real Estate Brokerage",
+        desc: "Build a website handle agency for real estate brokerage.",
         src: require('@/assets/porfo-projects/real-esate-project.png'),
         tech: [
           "PHP", "Laravel", "Vanilla JS", "Laravel Blade"
@@ -66,7 +66,7 @@ export default {
       },
       { 
         title: "MBTI Personality Test Project",
-        desc: "Build a new internal function to classify employee personality...",
+        desc: "Build a new internal function with quizz test to calculate points then classify employee's personality.",
         src: require('@/assets/porfo-projects/mbti-project.png'),
         tech: [
           "PHP", "Laravel", "Vanilla JS", "Restful API"
