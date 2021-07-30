@@ -43,7 +43,7 @@
             <v-img
               max-height="400"
               max-width="300"
-              :src="require('@/assets/porfo-avt.png')"
+              :src="avtImage"
               class="avt-image">
             </v-img>
             <div class="avt-square"></div>
@@ -56,6 +56,7 @@
 <script>
 import axios from 'axios';
 export default {
+  props: ['avtImage'],
   methods: {
     downloadCV(){
       axios.get('/VuQuangHuy_CV_Developer.pdf', {

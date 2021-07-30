@@ -2,11 +2,11 @@
   <v-app>
     <Header :appTitle="appTitle"/>
     <v-main>
-      <AboutMe id="about-me" />
+      <AboutMe :avtImage="avtImage" id="about-me" />
       <Education id="education" />
       <Experiences id="experiences" />
-      <Technologies id="technologies" />
-      <Projects id="projects" />
+      <Technologies :techLogo="techLogo" id="technologies" />
+      <Projects :projectImages="projectImages" id="projects" />
     </v-main>
     <Footer />
   </v-app>
@@ -24,6 +24,26 @@ import Footer from './components/Footer.vue';
 export default {
   name: 'App',
   created(){
+    this.projectImages = [
+      require('@/assets/porfo-projects/booking-project.png'),
+      require('@/assets/porfo-projects/real-esate-project.png'),
+      require('@/assets/porfo-projects/mbti-project.png'),
+      require('@/assets/porfo-projects/24yrs-anniversary-project.png'),
+      require('@/assets/porfo-projects/porfolio-project.png'),
+    ];
+    this.techLogo = [
+      require('@/assets/tech-logo/PHP-logo.png'),
+      require('@/assets/tech-logo/JavaScript-logo.png'),
+      require('@/assets/tech-logo/MySQL-Logo.wine.png'),
+      require('@/assets/tech-logo/linux-logo.png'),
+      require('@/assets/tech-logo/laravel-logo.png'),
+      require('@/assets/tech-logo/VueJS-logo.png'),
+      require('@/assets/tech-logo/NodeJS-logo.png'),
+      require('@/assets/tech-logo/Git-logo.png'),
+      require('@/assets/tech-logo/Illustrator-logo.png'),
+      require('@/assets/tech-logo/Photoshop-logo.png'),
+    ];
+    this.avtImage = require('@/assets/porfo-avt.png');
     document.title = "Vu Quang Huy's Porfolio"
   },
   components: {
@@ -37,6 +57,9 @@ export default {
   },
   data: () => ({
     appTitle: `Vu Quang Huy's Porfolio`,
+    avtImage: '',
+    techLogo: [],
+    projectImages: [],
   }),
 };
 </script>

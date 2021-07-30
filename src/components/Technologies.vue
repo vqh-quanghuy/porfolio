@@ -30,20 +30,23 @@
 </template>
 <script>
 export default {
-  data: ()=> ({
-    technologiesData: [
-      { title: "PHP logo", src: require('@/assets/tech-logo/PHP-logo.png') },
-      { title: "JS logo", src: require('@/assets/tech-logo/JavaScript-logo.png') },
-      { title: "MySQL logo", src: require('@/assets/tech-logo/MySQL-Logo.wine.png') },
-      { title: "Linux logo", src: require('@/assets/tech-logo/linux-logo.png') },
-      { title: "Laravel logo", src: require('@/assets/tech-logo/laravel-logo.png') },
-      { title: "VueJS logo", src: require('@/assets/tech-logo/VueJS-logo.png') },
-      { title: "NodeJS logo", src: require('@/assets/tech-logo/NodeJS-logo.png') },
-      { title: "Git logo", src: require('@/assets/tech-logo/Git-logo.png') },
-      { title: "Illustrator logo", src: require('@/assets/tech-logo/Illustrator-logo.png') },
-      { title: "Photoshop logo", src: require('@/assets/tech-logo/Photoshop-logo.png') },
-    ]
-  })
+  props: ['techLogo'],
+  data() {
+    return {
+      technologiesData: [
+        { title: "PHP logo", src: this.techLogo[0] },
+        { title: "JS logo", src: this.techLogo[1] },
+        { title: "MySQL logo", src: this.techLogo[2] },
+        { title: "Linux logo", src: this.techLogo[3] },
+        { title: "Laravel logo", src: this.techLogo[4] },
+        { title: "VueJS logo", src: this.techLogo[5] },
+        { title: "NodeJS logo", src: this.techLogo[6] },
+        { title: "Git logo", src: this.techLogo[7] },
+        { title: "Illustrator logo", src: this.techLogo[8] },
+        { title: "Photoshop logo", src: this.techLogo[9] },
+      ]
+    }
+  }
 }
 </script>
 <style scoped>

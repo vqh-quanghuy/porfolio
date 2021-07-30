@@ -23,8 +23,10 @@
           <div data-aos="fade-up"
           data-aos-delay="500"
           data-aos-duration="1000">
-            <h5 class="font-weight-bold text-center white--text tictactoe-title">Tic Tac Toe Game</h5>
-            <p v-if="gameWinner!==''" :class="gameWinner == `You win!`? `teal--text` : (gameWinner == `Machine win!`)?`red--text`:`yellow--text`" class="font-weight-normal text-center text--lighten-2 tictactoe-winner">{{gameWinner}}</p>
+            <h5 class="font-weight-bold text-center white--text tictactoe-title">Tic Tac Toe</h5>
+            <p 
+              :class="(gameWinner=='')?`blue--text`:gameWinner == `You win!`?`teal--text` : (gameWinner == `Machine win!`)?`red--text`:`yellow--text`"
+              class="font-weight-normal text-center text--lighten-2 tictactoe-winner">{{(gameWinner=="")?`Let try this game`:gameWinner}}</p>
             <table class="tictactoe mx-auto font-weight-black white--text my-4">
               <tr>
                 <td class="cell" id="0"></td>
@@ -261,7 +263,7 @@ export default {
   color: #fff;
 }
 .tictactoe-title{
-  font-size: 22px;
+  font-size: 26px;
 }
 .tictactoe-winner{
   font-size: 24px;
@@ -303,7 +305,7 @@ export default {
     font-size: 14px;
   }
   .tictactoe-title{
-    font-size: 20px;
+    font-size: 22px;
   }
   .tictactoe-winner{
     font-size: 18px;

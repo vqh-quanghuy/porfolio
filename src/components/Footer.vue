@@ -53,4 +53,9 @@
   background-color:  #32475B !important;
   border-color:  #32475B !important;
 }
+@media only screen and (max-width: 600px) {
+  .subheading{
+    width: 100%;
+  }
+}
 </style>

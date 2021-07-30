@@ -46,50 +46,53 @@
 </template>
 <script>
 export default {
-  data: () => ({
-    projects: [
-      { 
-        title: "Booking Hotel Room Project",
-        desc: "My graduate project, as required to clone main functions of Booking.com. I perform a website with main hotel's booking function, admin dashboard and hotel owner check user's booking information,...",
-        src: require('@/assets/porfo-projects/booking-project.png'),
-        tech: [
-          "PHP", "Laravel", "Vanilla JS", "Laravel Blade"
-        ]
-      },
-      { 
-        title: "Real Estate Brokerage",
-        desc: "Build a website handle agency for real estate brokerage.",
-        src: require('@/assets/porfo-projects/real-esate-project.png'),
-        tech: [
-          "PHP", "Laravel", "Vanilla JS", "Laravel Blade"
-        ]
-      },
-      { 
-        title: "MBTI Personality Test Project",
-        desc: "Build a new internal function with quizz test to calculate points then classify employee's personality.",
-        src: require('@/assets/porfo-projects/mbti-project.png'),
-        tech: [
-          "PHP", "Laravel", "Vanilla JS", "Restful API"
-        ]
-      },
-      { 
-        title: "Vhuers Online",
-        desc: "A event site welcome Van Hien University 24 years anniversary",
-        src: require('@/assets/porfo-projects/24yrs-anniversary-project.png'),
-        tech: [
-          "NodeJS", "Express", "VueJS", "Restful API", "HTML Canvas"
-        ]
-      },
-      { 
-        title: "Personal Porfolio",
-        desc: "Personal site show off my education, projects and work experiences",
-        src: require('@/assets/porfo-projects/porfolio-project.png'),
-        tech: [
-          "VueJS", "Vuetify",
-        ]
-      },
-    ]
-  })
+  props: ['projectImages'],
+  data () {
+    return {
+      projects: [
+        { 
+          title: "Booking Hotel Room Project",
+          desc: "My graduate project, as required to clone main functions of Booking.com. I perform a website with main hotel's booking function, admin dashboard and hotel owner check user's booking information,...",
+          src: this.projectImages[0],
+          tech: [
+            "PHP", "Laravel", "Vanilla JS", "Laravel Blade"
+          ]
+        },
+        { 
+          title: "Real Estate Brokerage",
+          desc: "Build a website handle agency for real estate brokerage.",
+          src: this.projectImages[1],
+          tech: [
+            "PHP", "Laravel", "Vanilla JS", "Laravel Blade"
+          ]
+        },
+        { 
+          title: "MBTI Personality Test Project",
+          desc: "Build a new internal function with quizz test to calculate points then classify employee's personality.",
+          src: this.projectImages[2],
+          tech: [
+            "PHP", "Laravel", "Vanilla JS", "Restful API"
+          ]
+        },
+        { 
+          title: "Vhuers Online",
+          desc: "A event site welcome Van Hien University 24 years anniversary",
+          src: this.projectImages[3],
+          tech: [
+            "NodeJS", "Express", "VueJS", "Restful API", "HTML Canvas"
+          ]
+        },
+        { 
+          title: "Personal Porfolio",
+          desc: "Personal site show off my education, projects and work experiences",
+          src: this.projectImages[4],
+          tech: [
+            "VueJS", "Vuetify",
+          ]
+        },
+      ]
+    }
+  }
 }
 </script>
 <style scoped>
