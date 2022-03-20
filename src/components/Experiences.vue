@@ -183,8 +183,9 @@ export default {
     winCombos: [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [6, 4, 2]],
     cells: document.querySelectorAll('.cell'),
     workplace: [
-      {title: '10/2018 - 5/2019: Hunghau Holdings', position: "Collaborator assist media - developing website",},
       {title: '11/2019 - 7/2020: MOR Software JSC', position: "Internship at Software Engineer position",},
+      {title: '2/2021 - 6/2021: Freelance', position: "Web Developer",},
+      {title: '9/2021 - now: SystemGear Vietnam', position: "Junior Software Engineer",},
     ],
   })
 }
