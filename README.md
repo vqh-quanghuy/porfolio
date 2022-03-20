@@ -1,28 +1,6 @@
-<<<<<<< HEAD
-# Vũ Quang Huy's Porfolio repository
-=======
-# porfolio-app
+VU QUANG HUY'S PORFOLIO APP
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
->>>>>>> master
+- 👋 Hi, I’m Quang Huy @vqh-quanghuy, a Web Developer in Vietnam 🇻🇳
+- 👀 I’m interested in Web Devepment Process and newly technologies.
+- 💻 I have experienced with PHP, Laravel Framework, Javascript, MySQL, HTML, CSS,...
+- 📚 I’m currently learning NodeJS, VueJS and Japanese
